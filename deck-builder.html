@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TCG One Piece - Deck Builder</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin:0; padding:0; background-color:#f2f2f2; }
+        header { background-color: #ffcc00; padding: 20px; text-align:center; }
+        header h1 { margin:0; }
+        nav { margin-top:10px; }
+        nav a { margin:0 15px; text-decoration:none; color:#333; font-weight:bold; }
+        .section { background-color:#fff; margin:20px auto; padding:20px; width:90%; max-width:1000px; border-radius:10px; box-shadow:0 0 10px rgba(0,0,0,0.1); }
+        .cards, .deck { display:flex; flex-wrap:wrap; gap:15px; justify-content:center; margin-top:15px; }
+        .card, .deck-card { background-color:#fffae6; padding:15px; border-radius:8px; width:150px; text-align:center; box-shadow:0 0 5px rgba(0,0,0,0.1); cursor:pointer; }
+        .deck-card { background-color:#e6f7ff; }
+        button { padding:8px 15px; background-color:#ffcc00; border:none; border-radius:5px; cursor:pointer; font-weight:bold; margin-top:10px; }
+        footer { background-color:#333; color:#fff; text-align:center; padding:15px; margin-top:20px; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Deck Builder TCG One Piece</h1>
+        <nav>
+            <a href="index.html">Accueil</a>
+            <a href="collection.html">Collection</a>
+            <a href="deck-builder.html">Deck Builder</a>
+            <a href="#">Forum</a>
+            <a href="#">Actualités</a>
+        </nav>
+    </header>
+
+```
+<div class="section">
+    <h2>Ma Collection</h2>
+    <div class="cards">
+        <div class="card" onclick="addToDeck(this)">Luffy</div>
+        <div class="card" onclick="addToDeck(this)">Zoro</div>
+        <div class="card" onclick="addToDeck(this)">Nami</div>
+        <div class="card" onclick="addToDeck(this)">Sanji</div>
+    </div>
+
+    <h2>Mon Deck</h2>
+    <div class="deck" id="deck"></div>
+    <button onclick="saveDeck()">Sauvegarder le deck</button>
+</div>
+
+<footer>
+    &copy; 2025 TCG One Piece | Tous droits réservés
+</footer>
+
+<script>
+    function addToDeck(cardElement){
+        const deck = document.getElementById('deck');
+        const newCard = cardElement.cloneNode(true);
+        newCard.classList.add('deck-card');
+        deck.appendChild(newCard);
+    }
+
+    function saveDeck(){
+        alert("Deck sauvegardé ! (fonctionnalité à connecter à la base de données)");
+    }
+</script>
+```
+
+</body>
+</html>

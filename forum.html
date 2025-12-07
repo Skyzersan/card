@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TCG One Piece - Forum</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin:0; padding:0; background-color:#f2f2f2; }
+        header { background-color: #ffcc00; padding: 20px; text-align:center; }
+        header h1 { margin:0; }
+        nav { margin-top:10px; }
+        nav a { margin:0 15px; text-decoration:none; color:#333; font-weight:bold; }
+        .section { background-color:#fff; margin:20px auto; padding:20px; width:90%; max-width:1000px; border-radius:10px; box-shadow:0 0 10px rgba(0,0,0,0.1); }
+        .category { background-color:#fffae6; padding:15px; border-radius:8px; margin-bottom:15px; }
+        .category h3 { margin:0; }
+        .topics { margin-top:10px; padding-left:15px; }
+        .topic { background-color:#e6f7ff; padding:10px; margin-bottom:8px; border-radius:5px; cursor:pointer; }
+        .new-topic { margin-bottom:20px; }
+        .new-topic input, .new-topic textarea { width:100%; padding:8px; margin:5px 0; border-radius:5px; border:1px solid #ccc; }
+        .new-topic button { padding:8px 15px; background-color:#ffcc00; border:none; border-radius:5px; cursor:pointer; font-weight:bold; }
+        footer { background-color:#333; color:#fff; text-align:center; padding:15px; margin-top:20px; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Forum TCG One Piece</h1>
+        <nav>
+            <a href="index.html">Accueil</a>
+            <a href="collection.html">Collection</a>
+            <a href="deck-builder.html">Deck Builder</a>
+            <a href="forum.html">Forum</a>
+            <a href="#">Actualités</a>
+        </nav>
+    </header>
+
+```
+<div class="section">
+    <div class="new-topic">
+        <h2>Créer un nouveau sujet</h2>
+        <input type="text" id="topicTitle" placeholder="Titre du sujet">
+        <textarea id="topicContent" rows="3" placeholder="Contenu du sujet"></textarea>
+        <button onclick="addTopic()">Ajouter le sujet</button>
+    </div>
+
+    <h2>Catégories</h2>
+
+    <div class="category" id="category1">
+        <h3>Questions / Aide TCG</h3>
+        <div class="topics" id="topics1">
+            <div class="topic">Comment débuter avec Luffy ?</div>
+            <div class="topic">Règles pour les cartes promo</div>
+        </div>
+    </div>
+
+    <div class="category" id="category2">
+        <h3>Tactiques et stratégies de deck</h3>
+        <div class="topics" id="topics2">
+            <div class="topic">Deck Zoro pour contrôle du terrain</div>
+            <div class="topic">Combos Nami + Luffy</div>
+        </div>
+    </div>
+
+    <div class="category" id="category3">
+        <h3>Échanges / ventes de cartes</h3>
+        <div class="topics" id="topics3">
+            <div class="topic">Échange Sanji contre Luffy</div>
+            <div class="topic">Vente rare East Blue</div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    &copy; 2025 TCG One Piece | Tous droits réservés
+</footer>
+
+<script>
+    function addTopic() {
+        const title = document.getElementById('topicTitle').value;
+        const content = document.getElementById('topicContent').value;
+        if(title && content){
+            const topicDiv = document.createElement('div');
+            topicDiv.className = 'topic';
+            topicDiv.textContent = title;
+            // Pour l'instant on ajoute dans la première catégorie
+            document.getElementById('topics1').appendChild(topicDiv);
+            // Clear inputs
+            document.getElementById('topicTitle').value = '';
+            document.getElementById('topicContent').value = '';
+            alert("Sujet ajouté ! (simulation, à connecter à une base de données pour sauvegarder)");
+        } else {
+            alert("Veuillez remplir le titre et le contenu du sujet.");
+        }
+    }
+</script>
+```
+
+</body>
+</html>

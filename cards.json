@@ -1,0 +1,58 @@
+[
+  {
+    "id": "OP09-119",
+    "name": "Monkey D. Luffy",
+    "set": "OP09 - Les Nouveaux Empereurs",
+    "rarity": "SEC",
+    "image": "images/OP09-119.jpg"
+  },
+  {
+    "id": "OP09-061",
+    "name": "Monkey D. Luffy (Leader)",
+    "set": "OP09 - Les Nouveaux Empereurs",
+    "rarity": "Leader",
+    "image": "images/OP09-061.jpg"
+  },
+  {
+    "id": "OP09-036",
+    "name": "Monkey D. Luffy",
+    "set": "OP09 - Les Nouveaux Empereurs",
+    "rarity": "Personnage",
+    "image": "images/OP09-036.jpg"
+  },
+  {
+    "id": "OP10-030",
+    "name": "Smoker",
+    "set": "OP10 - Sang Royal",
+    "rarity": "SR",
+    "image": "images/OP10-030.jpg"
+  },
+  {
+    "id": "OP09-004",
+    "name": "Shanks",
+    "set": "OP09 - Les Nouveaux Empereurs",
+    "rarity": "SP",
+    "image": "images/OP09-004.jpg"
+  },
+  {
+    "id": "OP09-078",
+    "name": "Gum Gum Gigant",
+    "set": "OP09 - Les Nouveaux Empereurs",
+    "rarity": "R",
+    "image": "images/OP09-078.jpg"
+  },
+  {
+    "id": "OP13-001",
+    "name": "Monkey D. Luffy (Version 2)",
+    "set": "OP13 - Successeurs",
+    "rarity": "L",
+    "image": "images/OP13-001.jpg"
+  },
+  {
+    "id": "OP13-002",
+    "name": "Portgas D. Ace",
+    "set": "OP13 - Successeurs",
+    "rarity": "L",
+    "image": "images/OP13-002.jpg"
+  }
+]

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TCG One Piece - Ma Collection</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin:0; padding:0; background-color:#f2f2f2; }
+        header { background-color: #ffcc00; padding: 20px; text-align:center; }
+        header h1 { margin:0; }
+        nav { margin-top:10px; }
+        nav a { margin:0 15px; text-decoration:none; color:#333; font-weight:bold; }
+        .section { background-color:#fff; margin:20px auto; padding:20px; width:90%; max-width:1000px; border-radius:10px; box-shadow:0 0 10px rgba(0,0,0,0.1); }
+        .cards { display:flex; flex-wrap:wrap; gap:15px; justify-content:center; }
+        .card { background-color:#fffae6; padding:15px; border-radius:8px; width:150px; text-align:center; box-shadow:0 0 5px rgba(0,0,0,0.1); }
+        .add-card { margin-bottom:20px; text-align:center; }
+        .add-card input { padding:8px; margin:5px; width:150px; }
+        .add-card button { padding:8px 15px; background-color:#ffcc00; border:none; border-radius:5px; cursor:pointer; font-weight:bold; }
+        footer { background-color:#333; color:#fff; text-align:center; padding:15px; margin-top:20px; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Ma Collection TCG One Piece</h1>
+        <nav>
+            <a href="index.html">Accueil</a>
+            <a href="collection.html">Collection</a>
+            <a href="deck-builder.html">Deck Builder</a>
+            <a href="#">Forum</a>
+            <a href="#">Actualités</a>
+        </nav>
+    </header>
+
+```
+<div class="section">
+    <div class="add-card">
+        <h2>Ajouter une carte à ma collection</h2>
+        <input type="text" placeholder="Nom de la carte">
+        <input type="text" placeholder="Set">
+        <input type="number" placeholder="Quantité" min="1">
+        <button>Ajouter</button>
+    </div>
+
+    <h2>Mes cartes</h2>
+    <div class="cards">
+        <div class="card">
+            <h3>Luffy</h3>
+            <p>Set : Grand Line</p>
+            <p>Quantité : 2</p>
+        </div>
+        <div class="card">
+            <h3>Zoro</h3>
+            <p>Set : East Blue</p>
+            <p>Quantité : 1</p>
+        </div>
+        <div class="card">
+            <h3>Nami</h3>
+            <p>Set : Grand Line</p>
+            <p>Quantité : 3</p>
+        </div>
+    </div>
+</div>
+
+<footer>
+    &copy; 2025 TCG One Piece | Tous droits réservés
+</footer>
+```
+
+</body>
+</html>
